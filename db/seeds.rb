@@ -20,3 +20,9 @@ user_serialized = URI.open(url).read
 user = JSON.parse(user_serialized)
 
 puts "#{user['title']}"
+
+puts "#{Movie.count}"
+
+List.create(name: "Kdrama")
+
+puts "#{List.count}"
